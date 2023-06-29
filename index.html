@@ -1,0 +1,262 @@
+<!--  © 2023 Keith Ralph Poncardas -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Menu Button Script -->
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Get all "navbar-burger" elements
+      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Add a click event on each of them
+      navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const targetElement = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          targetElement.classList.toggle('is-active');
+        });
+      });
+    });
+  </script>
+
+  <!-- Type Writer Animation Script -->
+  <script src="/assets/js/app.js"></script>
+
+  <title>Keith Poncardas</title>
+</head>
+
+<body>
+  <main class="header-container" id="header-container">
+    <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#header-container" title="Logo">
+          Keith Poncardas.
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu" id="navbarMenu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#about-section">About Me</a>
+          <a class="navbar-item" href="#photography-section">Photography</a>
+          <a class="navbar-item" href="#cover-section">Covers</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="text-container">
+        <p class="first-text">Hi! I'm <span class="txt-type" data-wait="3000"
+            data-words='["Keith Poncardas.", "a Developer", " a Vocalist", "a Software Engineer", "a Record Producer", "a Mobile Photographer", "a Entrepreneur"]'></span>
+        </p>
+        <p class="second-text">I'm A Vocalist, Software Engineer, Record Producer</p>
+        <p class="third-text">Photographer & Entrepreneur.</p>
+        <div class="button-container">
+          <a class="buttons" href="#about-section">About Me</a>
+          <a class="buttons" href="https://www.messenger.com/t/100084826036165" target="_blank">Message Me</a>
+        </div>
+      </div>
+      <div class="image-container">
+        <img onerror="this.src='./assets/images/no-img.jpg';" src="./assets/images/profile.jpg" alt="keith-poncardas"
+          title="Keith Poncardas">
+      </div>
+    </div>
+    <section class="about-section" id="about-section">
+      <div class="about-container">
+        <div class="about-image-container">
+          <img onerror="this.src='./assets/images/no-img.jpg';"
+            src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFGJ81rnJMAY0EpdGIc7dlsf2QrsDiuxXxGxKYYEjcTZ_7Phw9hnf-iKtgZetREKQ6kcPmQ_LN08NZj24YrCoEoJXne-Tz08=w1960-h4240"
+            alt="Responsive Image">
+        </div>
+        <div class="about-content">
+          <h1>About Me</h1>
+          <p>
+            Hello! I'm <strong>Keith Ralph Robles Poncardas</strong>, a 20-year-old from Cavite City, Philippines. My
+            passions are music recording and coding. I love capturing sounds, mixing tracks, and producing music. I'm
+            also fascinated by coding and enjoy creating software solutions. In the future, I aim to be a successful
+            software engineer and record producer, combining my technical skills and artistic interests. Thank you for
+            getting to know a bit about me and my aspirations!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="photography-section" id="photography-section">
+      <style>
+        .image {
+          width: 100%;
+          /* Adjust as needed */
+          height: auto;
+          /* This ensures the image maintains its original aspect ratio */
+        }
+
+        .image img {
+          width: 100%;
+          height: auto;
+        }
+      </style>
+      <div class="img-container">
+        <h1 class="main-title">Latest Photography</h1>
+        <div class="image-grid">
+          <div class="columns is-multiline">
+            <div class="column is-4">
+              <figure class="image">
+                <img onerror="this.src='./assets/images/no-img.jpg';"
+                  src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFGJ81rROUyJT3cCXo85K7JTeKl6ZgZGncB-a92w3ztVjHzAcQXXKk0XQ2ZrBop96Ab9_QgKb2QfzLmH43jkuaO7m-ctsTA9Hg=w1960-h2958"
+                  alt="Image 1" title="Taal">
+              </figure>
+              <div class="caption">
+                <h4 class="title is-4">Taal</h4>
+                <p><i class='bx bx-map'></i> Tagaytay City</p>
+                <p><i class='bx bx-like'></i> <a
+                    href="https://www.facebook.com/photo?fbid=202737485897118&set=gm.6140383326074511&idorvanity=1160643694048524"
+                    target="_blank">Like This Photo</a></p>
+                <p><i class='bx bx-download'></i> <a
+                    href="https://drive.google.com/file/d/1yliwJT1jGLiK1xSFXTTtW2aiOniTufVA/view?usp=share_link"
+                    target="_blank">Download</a>
+                </p>
+              </div>
+            </div>
+            <div class="column is-4">
+              <figure class="image">
+                <img onerror="this.src='./assets/images/no-img.jpg';"
+                  src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFGJ81ohcwh5AratGNlqt7iLDQkg7UYJWA3GKnIoTTj4G_v83ece0UKRHESdcZIaVBaX6I8iI9fw4K8OhYRhFE37MHSmAnHGCA=w1366-h635"
+                  alt="Image 2" title="Daong">
+              </figure>
+              <div class="caption">
+                <h4 class="title is-4">Daong</h4>
+                <p><i class='bx bx-map'></i> Brgy. Villa Padua, Gumaca, Quezon</p>
+                <p><i class='bx bx-like'></i> <a
+                    href="https://www.facebook.com/photo?fbid=193346796836187&set=gm.6088777561235088&idorvanity=1160643694048524"
+                    target="_blank">Like
+                    This Photo</a></p>
+                <p><i class='bx bx-download'></i> <a
+                    href="https://drive.google.com/file/d/1oHg8QHce1-O822rsMDG2pg_aTK3thPKu/view?usp=share_link"
+                    target="_blank">Download</a>
+                </p>
+              </div>
+            </div>
+            <div class="column is-4">
+              <figure class="image">
+                <img onerror="this.src='./assets/images/no-img.jpg';"
+                  src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFGJ81q9_avngDj0r3zHai4-f0gcDdY_XdK1XfG9YXPZCODJ24qZwrMnLsQuuhl7_SivxxfwidgWyX3UgTvc4glE6LByZlRXKg=w1366-h635"
+                  alt="Image 2" title="Daang Bakal 2">
+              </figure>
+              <div class="caption">
+                <h4 class="title is-4">Daang Bakal 2</h4>
+                <p><i class='bx bx-map'></i> Brgy. Panikihan, Gumaca, Quezon</p>
+                <p><i class='bx bx-like'></i> <a
+                    href="https://www.facebook.com/photo?fbid=191571003680433&set=gm.6079243718855139&idorvanity=1160643694048524"
+                    target="_blank">Like
+                    This Photo</a></p>
+                <p><i class='bx bx-download'></i> <a
+                    href="https://drive.google.com/file/d/1ZTHJVe8ob_vwfsxkrY0d-Bemf_Fa21IJ/view?usp=share_link"
+                    target="_blank">Download</a>
+                </p>
+              </div>
+            </div>
+            <!-- Add more columns for additional images -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="cover-section">
+      <div class="video-container">
+        <h2 class="main-title video-main-title">Covers</h2>
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <div class="iframe-container">
+                <iframe class="responsive-iframe"
+                  src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fkitkat.poncardas%2Fvideos%2F1926534574356803%2F&show_text=false&width=560&t=0"
+                  width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                  allowfullscreen="true"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  allowFullScreen="true"></iframe>
+              </div>
+              <h2 class="title is-4">Bulong</h2>
+              <p><i class='bx bx-music'></i> Performed By : <a href="https://www.facebook.com/kitkat.poncardas"
+                  class="attribution-link" target="_blank">Keith Poncardas</a>
+              </p>
+              <p><i class='bx bx-like'></i> <a href="https://www.facebook.com/kitkat.poncardas/videos/1926534574356803"
+                  target="_blank">Like This
+                  Video</a>
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <div class="iframe-container">
+                <iframe class="responsive-iframe" width="560" height="315"
+                  src="https://www.youtube.com/embed/oVNlroZRq_E" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <h2 class="title is-4">Sa Ngalan Ng Pag Ibig</h2>
+              <p><i class='bx bx-music'></i> Performed By : <a href="https://www.facebook.com/kitkat.poncardas"
+                  class="attribution-link" target="_blank">Keith Poncardas</a>
+              </p>
+              <p><i class='bx bx-like'></i> <a href="https://youtu.be/oVNlroZRq_E" target="_blank">Like This Video</a>
+              </p>
+              <p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <footer>
+      &copy; 2023 Keith Poncardas. All Rights Reserve
+    </footer>
+  </main>
+  <script>
+    // Add smooth scrolling behavior to the navbar links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  <script>
+    // Add 'scrolled' class to navbar on scroll
+    window.addEventListener('scroll', function () {
+      var navbar = document.querySelector('.navbar');
+      var scrolled = window.pageYOffset > 0;
+      navbar.classList.toggle('scrolled', scrolled);
+    });
+  </script>
+</body>
+
+</html>
